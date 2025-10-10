@@ -1,6 +1,9 @@
+// src/components/FAQSection.tsx
+"use client"; // This component uses client-side state
+
 import { useState } from "react";
 
- 
+// You would typically fetch this data from a CMS
 const faqData = [
   {
     question: "What is included in a penetration test?",
@@ -93,7 +96,7 @@ const AccordionItem  = ({ question, answer, isOpen, onClick }: { question: strin
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const handleItemClick = (index : number) => {
+  const handleItemClick = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 

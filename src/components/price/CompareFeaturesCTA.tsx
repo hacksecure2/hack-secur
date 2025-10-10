@@ -1,5 +1,3 @@
-// src/components/CompareFeaturesCTA.tsx
-import React from "react";
 
 const CompareFeaturesCTA = () => {
   return (

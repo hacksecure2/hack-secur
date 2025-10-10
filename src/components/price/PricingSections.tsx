@@ -1,6 +1,7 @@
-import { useState } from "react";
 import PricingCard from "./PricingCard";
 
+ 
+// Icons for each plan
 const ShieldIcon = () => (
   <svg
     className="w-8 h-8 text-cyan-400"
@@ -69,8 +70,8 @@ const pricingData = [
       "Human Courses",
       "Cyber Laws and Policies",
       "Community Projects",
-      " CTFs",
-      " Bootcamps",
+      " CTFs",
+      " Bootcamps",
     ],
     ctaText: "Get Started",
     ctaLink: "#",
@@ -110,7 +111,7 @@ const pricingData = [
       "Release  Notes",
       "Training Programs",
       "Elite Courses",
-      "1 on 1 Mentorship",
+      "1 on 1 Mentorship",
     ],
     ctaText: "Contact Sales",
     ctaLink: "#",
@@ -119,12 +120,6 @@ const pricingData = [
 ];
 
 const PricingSection = () => {
-  const [openCardIndex, setOpenCardIndex] = useState<number | null>(null);
-
-  const handleCardToggle = (index: number) => {
-    setOpenCardIndex(openCardIndex === index ? null : index);
-  };
-
   return (
     <section className="bg-gray-900/70 text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
@@ -151,8 +146,6 @@ const PricingSection = () => {
             ctaLink={plan.ctaLink}
             isPopular={plan.isPopular}
             isEnterprise={plan.isEnterprise}
-            isOpen={openCardIndex === index}
-            onToggle={() => handleCardToggle(index)}
           />
         ))}
       </div>
