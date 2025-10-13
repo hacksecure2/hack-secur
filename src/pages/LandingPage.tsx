@@ -1,8 +1,7 @@
 import Navbar from "../components/LandingPage/Navbar";
 import Aurora from "../UI/Aurora";
 import CareersSection from "../components/LandingPage/CareersSection";
-import { Footer } from "../components/LandingPage/Footer";
-import ScrollReveal from "../UI/ScrollReveal";
+import { Footer } from "../components/LandingPage/Footer"; 
 import SponsorsSection from "../components/LandingPage/SponsorsSection";
 import { useRef } from "react";
 import StatsCardsSection from "../components/LandingPage/StatsCardsSection";
