@@ -11,6 +11,55 @@ import TestimonialsSection from "../components/LandingPage/TestimonialsSection";
 
 export default function LandingPage() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  interface InfoCardProps {
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+  }
+  
+  const InfoCard: React.FC<InfoCardProps> = ({ icon, title, description }) => (
+    <div className="flex flex-col items-center text-center">
+      <div className="mb-4 h-40 w-40 opacity-80">{icon}</div>
+      <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+      <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+    </div>
+  );
+    const partnershipFeatures = [
+      {
+        icon: (
+          <img
+            src="https://www.cyberross.com/_next/image?url=/assets/principles/inventingAndInnovating.jpg&w=640&q=75"
+            alt=""
+          />
+        ),
+        title: "Tailored security services",
+        description:
+          "Experts understand the ins and outs of security challenges and offer bespoke cybersecurity services such as detailed guides, security roadmaps, and risk prioritization measures, each tailored to the organization's specific needs and risk appetite.",
+      },
+      {
+        icon: (
+          <img
+            src="https://image.made-in-china.com/202f0j00PiARBWoqHEcY/Fashionable-Crystal-Brush-Holder-Rotate-Pen-Stand-Crystal-Pen-Holder.webp"
+            alt=""
+          />
+        ),
+        title: "Technology creators and enablers",
+        description:
+          "As a trusted partner, organizations have access to a cohesive ecosystem of expertise, technologies, and services, which allows them to future-proof their operations and upgrade their cybersecurity posture.",
+      },
+      {
+        icon: (
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmZ1gKqKGea58lsorZwa3S9bU_67UVPSk0_lNdUME1aOhH2iPq"
+            alt=""
+          />
+        ),
+        title: "Globally distributed expertise",
+        description:
+          "Hack Secure works in synergy with innovative technologies to offer detection and response capabilities that eliminate cyber disruptions efficiently and effectively. We map and mitigate adversary tactics in each region through targeted intelligence and operations.",
+      },
+    ];
   return (
     <>
       <div
@@ -30,28 +79,28 @@ export default function LandingPage() {
         <HeroSection />
         <SponsorsSection />
         <section id="learn" className="py-40 bg-[#0c0c0c] relative">
-          <div className="max-w-7xl mx-auto px-8">
-            <ScrollReveal
-              containerClassName=""
-              textClassName="text-4xl text-center md:text-5xl lg:text-6xl font-bold text-white leading-relaxed"
-              baseOpacity={0}
-              baseRotation={8}
-              blurStrength={10}
-            >
-              Build for next-gen learners and innovators.
-            </ScrollReveal>
-            <ScrollReveal
-              containerClassName="  mt-8"
-              textClassName="text-[#f9f9f9]/60 font-bricolage-light text-md md:text-2xl text-center leading-relaxed max-w-4xl mx-auto"
-              baseOpacity={0}
-              baseRotation={5}
-              blurStrength={10}
-            >
-              HackSecure is where global learners come to master cybersecurity,
-              secure digital assets, and lead the transformation of our digital
-              world. All in one comprehensive platform.
-            </ScrollReveal>
-          </div>
+          <section className="py-24">
+            <div className="container mx-auto px-6 text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-white">
+                Gain a formidable partner to build exceptional defenses
+              </h2>
+              <p className="text-gray-400 mt-6 max-w-3xl mx-auto">
+                From expert-led training to real-time investigations, everything
+                we do is designed to make your digital environment smarter,
+                safer, and stronger.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
+                {partnershipFeatures.map((feature) => (
+                  <InfoCard
+                    key={feature.title}
+                    icon={feature.icon}
+                    title={feature.title}
+                    description={feature.description}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
         </section>
         <StatsCardsSection />
         <section className=" bg-[#0c0c0c] py-40">

@@ -15,8 +15,8 @@ export default function CareersSection() {
 
   const blocks = [
     {
-      heading: "Empower",
-      desc: "We offer a wide range of services from expert-led webinars and sessions to hands-on workshops and real-world cyber investigation support. Whether you're looking to learn, train, or secure, our services are designed to deliver impact and build resilience across every level.",
+      heading: "Services",
+      desc: "We offer a wide range of services from expert-led webinars and interactive sessions to hands-on workshops and real-world cyber investigation support. Our cybersecurity driven anti-fraud and brand protection solutions are powered by intelligence-driven technologies and the exceptional human proficiency of our experts.",
       cardTitle: "Services",
       cardIcon: <ServicesIcon />,
       cardDesc:
@@ -24,8 +24,8 @@ export default function CareersSection() {
       cardColor: "from-[#18359a]/20 to-[#338aca]/20",
     },
     {
-      heading: "Innovate",
-      desc: "Partner with Hack Secure to drive innovation, share knowledge, make a global impact in cybersecurity. From academic and corporates to communities and international. We welcome partnerships that aim to build a safer world.",
+      heading: "Partners",
+      desc: "From academic institutions and corporates to communities and international networks. We welcome partnerships that aim to build a safer digital world.",
       cardTitle: "Partners",
       cardIcon: <PartnersIcon />,
       cardDesc:
@@ -33,8 +33,8 @@ export default function CareersSection() {
       cardColor: "from-purple-600/20 to-purple-400/20",
     },
     {
-      heading: "Cybersecurity Education, Reinvented",
-      desc: "HackSecure LearnX is your gateway to real-world cybersecurity learning. Dive into expert-curated content, live sessions, CTFs, case studies, and hands-on challenges all built to sharpen your skills and fuel your growth. Whether you're a beginner or a pro, there's always more to explore.",
+      heading: "LearnX - Cybersecurity Education reinvented",
+      desc: "HackSecure LearnX is your gateway to real-world cybersecurity learning. Dive into expert-curated content, live sessions, CTFs. This includes exciting features like case studies and hands-on challenges, all built to sharpen your skills and fuel your growth. Whether you are a beginner or a pro, there is always more to explore.",
       cardTitle: "LearnX",
       cardIcon: <LearnIcon />,
       cardDesc:

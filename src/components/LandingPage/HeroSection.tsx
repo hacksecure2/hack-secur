@@ -6,22 +6,18 @@ export default function HeroSection() {
     >
       <div className="w-full">
         {/* Tag */}
-        <div className="flex justify-center mb-8 sm:mb-10">
-          <div className="bg-gradient-to-r from-[#4290bc]/20 to-[#338aca]/20 backdrop-contrast-150 backdrop-blur-xl px-4 sm:px-6 py-1.5 sm:py-2 rounded-full border border-[#4290bc]/30">
-            <span className="text-[#f9f9f9] text-xs sm:text-sm font-light tracking-wide">
-              Learn • Secure • Lead
-            </span>
-          </div>
+        <div className="flex justify-center ">
+             <img className="h-40 w-40" src="/logo_remove_background.png" alt="" />
         </div>
 
         {/* Headings */}
         <div className="text-center space-y-6 sm:space-y-8">
           <div className="md:space-y-2 lg:space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-anybody font-bold bg-gradient-to-tr from-[#4290bc]/70 via-[#338aca]/70 to-[#14279B]/70 bg-clip-text text-transparent leading-tight">
-              Master the art of secure innovation.
+              The next Generation of Cybersecurity  <br /> Experts
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white/90">
-              With Hack Secure CyberSecurity Solutions.
+              built for innovation and impact. Powered by Hack Secure.
             </h2>
           </div>
 
