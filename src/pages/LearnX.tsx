@@ -1,11 +1,11 @@
-import ComingSoonPage from "../components/ComingSoon"
+import CybersecurityPage from "../components/ComingSoon";
 
 const LearnX = () => {
   return (
     <div>
-        <ComingSoonPage />
+      <CybersecurityPage />
     </div>
-  )
+  );
 }
 
 export default LearnX
