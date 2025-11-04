@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="bg-[#0c0c0c] pb-30 md:pb-60  h-fit flex justify-center items-center rounded-b-4xl relative overflow-hidden">
+    <section className="bg-black pb-30 md:pb-60  h-fit flex justify-center items-center rounded-b-4xl relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center ">
           <h2 className="text-4xl md:text-5xl lg:text-9xl font-bold text-[#f9f9f9]/30 md:mb-4">
