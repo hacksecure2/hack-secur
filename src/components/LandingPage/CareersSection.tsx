@@ -120,7 +120,7 @@ export default function CareersSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full flex justify-center items-center bg-[#0c0c0c] text-[#f9f9f9]"
+      className="relative w-full flex justify-center items-center bg black text-[#f9f9f9]"
     >
       <div className=" relative flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 relative z-10">

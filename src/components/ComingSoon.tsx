@@ -6,11 +6,11 @@ const ComingSoonPage = () => {
     <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-950 to-blue-950 text-white overflow-hidden p-4">
       {/* Background overlay/pattern - subtle, abstract */}
       <div className="absolute inset-0 z-0 opacity-20">
-        <img
+        {/* <img
           src="/placeholders/coming_soon_bg_pattern.png" // Replace with an abstract pattern or image
           alt="Abstract background pattern"
           className="w-full h-full object-cover"
-        />
+        /> */}
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto text-center bg-gray-900/40 backdrop-blur-sm border border-blue-700/50 rounded-lg p-8 md:p-12 shadow-xl">
