@@ -39,7 +39,7 @@ export default function LandingPage() {
       {
         icon: (
           <img
-            src="https://image.made-in-china.com/202f0j00PiARBWoqHEcY/Fashionable-Crystal-Brush-Holder-Rotate-Pen-Stand-Crystal-Pen-Holder.webp"
+            src="https://p.globalsources.com/IMAGES/PDT/BIG/258/B1004613258.jpg"
             alt=""
           />
         ),
@@ -77,7 +77,7 @@ export default function LandingPage() {
         <Navbar />
         <HeroSection />
         <SponsorsSection />
-        <section id="learn" className="py-40 bg-[#0c0c0c] relative">
+        <section id="learn" className="py-40 bg-black relative">
           <section className="py-24">
             <div className="container mx-auto px-6 text-center">
               <h2 className="text-3xl md:text-5xl font-bold text-white">
